@@ -1,0 +1,17 @@
+program SageMelet;
+
+uses
+  Forms,
+  uComunica in 'uComunica.pas' {frmComunica},
+  udmCommMelet in 'udmCommMelet.pas' {dmCommMelec: TDataModule},
+  uSage3ToDelphi in '..\..\SageLabWin\uSage3ToDelphi.pas';
+
+{$R *.RES}
+
+begin
+  Application.Initialize;
+  Application.Title := 'Comunicaciones Sage <-> Melec';
+  Application.CreateForm(TfrmComunica, frmComunica);
+  Application.CreateForm(TdmCommMelet, dmCommMelet);
+  Application.Run;
+end.

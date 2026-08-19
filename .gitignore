@@ -1,0 +1,15 @@
+# Ignorar todo por defecto
+*
+
+# Permitir recorrer subcarpetas
+!*/
+
+# Archivos fuente y configuración versionables
+!*.pas
+!*.dfm
+!*.dpr
+!*.ini
+!*.ico
+
+# Versionar el propio gitignore
+!.gitignore
