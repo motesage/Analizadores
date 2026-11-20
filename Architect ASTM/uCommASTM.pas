@@ -220,7 +220,6 @@ begin
   end;    // for
 end;
 
-
 procedure TfrmCommASTM.LeeConf;
 var
 	IniFile: tInifile;
@@ -231,17 +230,10 @@ begin
   try
     bauds := IniFile.ReadInteger('parametros','bauds',9600);
     port := IniFile.ReadInteger('parametros','port',4);
-//    HardwareKey := IniFile.ReadString('cliente','hwkey','');
-//    LocalHardwareID := GetHardwareID;
-//    if HardwareKey = '' then begin
-//      HardwareKey := LocalHardwareID;
-//    end;
-//    IniFile.WriteString('cliente','hwkey',HardwareKey);
   finally
     IniFile.Free;
 	end;
 end;
-
 
 procedure TfrmCommASTM.FormDestroy(Sender: TObject);
 begin
@@ -256,7 +248,7 @@ end;
 procedure TfrmCommASTM.FormCloseQuery(Sender: TObject;
   var CanClose: Boolean);
 begin
-  CanClose := false;
+//  CanClose := false;
 end;
 
 end.

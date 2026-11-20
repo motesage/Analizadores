@@ -1,6 +1,7 @@
 program MindrayHL7Sim;
 
 uses
+  ExceptionLog,
   Forms,
   uMindrayHL7Sim in 'uMindrayHL7Sim.pas' {frmMindrayHL7Sim};
 
